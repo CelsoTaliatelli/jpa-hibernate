@@ -1,5 +1,6 @@
 package testes;
 
+import DAO.CategoriaDAO;
 import DAO.ProdutoDAO;
 import modelo.Categoria;
 import modelo.Produto;
@@ -12,12 +13,15 @@ import java.math.BigDecimal;
 
 public class CadastroProduto {
     public static void main(String[] args) {
-        Produto celular = new Produto("Iphone 11","Celular",new BigDecimal("12000"), Categoria.CELULARES);
+        Categoria categoria = new Categoria("CELULARES");
+        Produto celular = new Produto("Iphone 11","Celular",new BigDecimal("12000"), categoria);
 
         EntityManager em = JPAUtil.getEntityManager();
-        ProdutoDAO dao = new ProdutoDAO(em);
+        CategoriaDAO categoriaDAO = new CategoriaDAO(em);
+        ProdutoDAO produtoDAO = new ProdutoDAO(em);
         em.getTransaction().begin();
-        dao.cadastrar(celular);
+        categoriaDAO.cadastrar(categoria);
+        produtoDAO.cadastrar(celular);
         em.getTransaction().commit();
         em.close();
     }
