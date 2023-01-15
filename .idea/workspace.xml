@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="feat:relacionamentos Bidirecionais">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ClienteDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/PedidoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/RepositoryType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testes/CadastroDePedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/ItemPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Pedido.java" afterDir="false" />
@@ -19,6 +24,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -53,7 +59,20 @@
       <recent name="DAO" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CadastroDePedido">
+    <configuration name="CadastroDePedido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testes.CadastroDePedido" />
+      <module name="jpa-hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CadastroProduto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testes.CadastroProduto" />
       <module name="jpa-hibernate" />
@@ -69,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CadastroDePedido" />
         <item itemvalue="Application.CadastroProduto" />
         <item itemvalue="Application.CadastroProduto" />
       </list>
@@ -160,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673804650830</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat:relacionamentos Bidirecionais">
+      <created>1673805227206</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673805227206</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -5,14 +5,10 @@ import modelo.Produto;
 
 import javax.persistence.EntityManager;
 
-public class CategoriaDAO {
+public class CategoriaDAO extends Repository<Categoria>{
     private EntityManager em;
 
     public CategoriaDAO(EntityManager em) {
-        this.em = em;
-    }
-
-    public void cadastrar(Categoria categoria) {
-        this.em.persist(categoria);
+        super(em);
     }
 }

@@ -12,17 +12,17 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "valor_total")
     private BigDecimal valortotal;
     private LocalDate dataPedido = LocalDate.now();
     @ManyToOne
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "pedido")
+    @OneToMany(mappedBy = "pedido",cascade = CascadeType.ALL)
     private List<ItemPedido> itensPedido = new ArrayList<>();
 
-    public Pedido(Cliente cliente, BigDecimal valorTotal){
+    public Pedido(Cliente cliente){
         this.cliente = cliente;
-        this.valortotal = valorTotal;
     }
 
     public Pedido(){}
@@ -32,6 +32,11 @@ public class Pedido {
     }
 
     public BigDecimal getValortotal() {
+
+        itensPedido.stream().forEach(p -> {
+            this.valortotal.add(p.getPrecoUnitario().multiply(BigDecimal.valueOf(p.getQuantidade())));
+        });
+
         return valortotal;
     }
 

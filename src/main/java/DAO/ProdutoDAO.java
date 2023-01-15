@@ -6,24 +6,11 @@ import javax.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class ProdutoDAO {
+public class ProdutoDAO extends Repository<Produto>{
     private EntityManager em;
 
     public ProdutoDAO(EntityManager em) {
-        this.em = em;
-    }
-
-    public void cadastrar(Produto produto) {
-        this.em.persist(produto);
-    }
-
-    public Produto buscarPorId(Long id) {
-        return em.find(Produto.class,id);
-    }
-
-    public List<Produto> buscarTodos() {
-        var jpql = "SELECT p FROM Produto p";
-        return em.createQuery(jpql).getResultList();
+        super(em);
     }
 
     public List<Produto> buscarPorNome(String nome) {
