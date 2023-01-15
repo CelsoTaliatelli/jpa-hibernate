@@ -17,6 +17,8 @@ public class CadastroProduto {
         cadastrarProdutos();
         buscarProduto(1L);
         buscarTodosProdutos();
+        buscarPorNome("Iphone 11");
+        buscarPorNomeCategoria("CELULARES");
         closeEntityManger();
     }
 
@@ -44,6 +46,22 @@ public class CadastroProduto {
     private static void buscarTodosProdutos() {
         ProdutoDAO produtoDAO = new ProdutoDAO(em);
         List<Produto> produtos = produtoDAO.buscarTodos();
+        produtos.forEach(p -> {
+            System.out.println(p.getNome());
+        });
+    }
+
+    private static void buscarPorNome(String nome) {
+        ProdutoDAO produtoDAO = new ProdutoDAO(em);
+        List<Produto> produtos = produtoDAO.buscarPorNome(nome);
+        produtos.forEach(p -> {
+            System.out.println(p.getNome());
+        });
+    }
+
+    private static void buscarPorNomeCategoria(String nome) {
+        ProdutoDAO produtoDAO = new ProdutoDAO(em);
+        List<Produto> produtos = produtoDAO.buscarPorNomeCategoria(nome);
         produtos.forEach(p -> {
             System.out.println(p.getNome());
         });
