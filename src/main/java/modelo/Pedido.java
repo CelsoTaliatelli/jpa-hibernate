@@ -3,6 +3,7 @@ package modelo;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,7 +18,7 @@ public class Pedido {
     private Cliente cliente;
 
     @OneToMany(mappedBy = "pedido")
-    private List<ItemPedido> itensPedido;
+    private List<ItemPedido> itensPedido = new ArrayList<>();
 
     public Pedido(Cliente cliente, BigDecimal valorTotal){
         this.cliente = cliente;
@@ -36,6 +37,11 @@ public class Pedido {
 
     public LocalDate getDataPedido() {
         return dataPedido;
+    }
+
+    public void addItem(ItemPedido item) {
+        item.setPedido(this);
+        this.itensPedido.add(item);
     }
 
     public Cliente getCliente() {
