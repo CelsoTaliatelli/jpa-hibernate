@@ -24,6 +24,8 @@ public class Produto {
         this.categoria = categoria;
     }
 
+    public Produto(){}
+
     public Long getId() {
         return id;
     }
