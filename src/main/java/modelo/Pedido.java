@@ -1,5 +1,7 @@
 package modelo;
 
+import org.hibernate.annotations.Fetch;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -16,7 +18,7 @@ public class Pedido {
     private BigDecimal valorTotal = new BigDecimal("0");
     @Column(name = "data_pedido")
     private LocalDate dataPedido = LocalDate.now();
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Cliente cliente;
 
     @OneToMany(mappedBy = "pedido",cascade = CascadeType.ALL)
@@ -44,6 +46,10 @@ public class Pedido {
         item.setPedido(this);
         this.itensPedido.add(item);
         this.valorTotal = item.getPrecoUnitario().multiply(new BigDecimal(item.getQuantidade()));
+    }
+
+    public List<ItemPedido> getItensPedido() {
+        return itensPedido;
     }
 
     public Cliente getCliente() {
