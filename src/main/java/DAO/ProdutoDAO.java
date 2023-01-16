@@ -21,8 +21,7 @@ public class ProdutoDAO extends Repository<Produto>{
     }
 
     public List<Produto> buscarPorNomeCategoria(String nome) {
-        var jpql = "SELECT p FROM Produto p where p.nome = :nome";
-        return em.createQuery(jpql)
+        return em.createNamedQuery("Produto.produtosPorCategoria",Produto.class)
                 .setParameter("nome",nome)
                 .getResultList();
     }
