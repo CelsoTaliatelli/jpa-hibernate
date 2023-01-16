@@ -51,5 +51,11 @@ public class PedidoDAO extends Repository<Pedido>{
                 .getResultList();
     }
 
+    public Pedido buscarPedidoComCliente(Long id) {
+        return em.createQuery("SELECT p from Pedido p JOIN FETCH p.cliente WHERE p.id = :id",Pedido.class)
+                .setParameter("id",id)
+                .getSingleResult();
+    }
+
 
 }
