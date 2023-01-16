@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Repository<T> {
 
-    private EntityManager em;
+    protected EntityManager em;
     final ParameterizedType type = (ParameterizedType) getClass().getGenericSuperclass();
     Class<T> entidade = (Class<T>) (type).getActualTypeArguments()[0];
     /**
@@ -30,6 +30,11 @@ public class Repository<T> {
         var entidade = this.entidade.getName();
         var jpql = "SELECT m FROM " + entidade + " m";
         return em.createQuery(jpql).getResultList();
+    }
+
+    public void remove(T entidade){
+        entidade = em.merge(entidade);
+        em.remove(entidade);
     }
 
 }

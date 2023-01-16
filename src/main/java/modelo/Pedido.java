@@ -13,7 +13,8 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "valor_total")
-    private BigDecimal valortotal;
+    private BigDecimal valorTotal = new BigDecimal("0");
+    @Column(name = "data_pedido")
     private LocalDate dataPedido = LocalDate.now();
     @ManyToOne
     private Cliente cliente;
@@ -32,12 +33,7 @@ public class Pedido {
     }
 
     public BigDecimal getValortotal() {
-
-        itensPedido.stream().forEach(p -> {
-            this.valortotal.add(p.getPrecoUnitario().multiply(BigDecimal.valueOf(p.getQuantidade())));
-        });
-
-        return valortotal;
+        return valorTotal;
     }
 
     public LocalDate getDataPedido() {
@@ -47,6 +43,7 @@ public class Pedido {
     public void addItem(ItemPedido item) {
         item.setPedido(this);
         this.itensPedido.add(item);
+        this.valorTotal = item.getPrecoUnitario().multiply(new BigDecimal(item.getQuantidade()));
     }
 
     public Cliente getCliente() {

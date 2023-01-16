@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="feat:relacionamentos Bidirecionais">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ClienteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/PedidoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/RepositoryType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testes/CadastroDePedido.java" afterDir="false" />
+    <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="feat: consultas com select new">
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/RelatorioDeVendasVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testes/CadastroDePedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testes/CadastroDePedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -212,6 +210,9 @@
     <MESSAGE value="feat:consultado entidades" />
     <MESSAGE value="feat:consultado com filtros usando JPQL" />
     <MESSAGE value="feat:relacionamentos Bidirecionais" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:relacionamentos Bidirecionais" />
+    <MESSAGE value="feat: consultas com agregações e relatorios" />
+    <MESSAGE value="fix: ajuste nome de propriedade" />
+    <MESSAGE value="feat: consultas com select new" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: consultas com select new" />
   </component>
 </project>

@@ -28,7 +28,12 @@ public class CadastroDePedido {
         pedido.addItem(new ItemPedido(5,pedido,produto));
         PedidoDAO pedidoDAO = new PedidoDAO(em);
         pedidoDAO.cadastrar(pedido);
-        System.out.println(pedidoDAO.buscarPorId(1L).getCliente().getNome());
+        System.out.println(pedidoDAO.relatorioDeVendas());
+        pedidoDAO.relatorioDeVendasV2().forEach(p -> {
+            System.out.println(p.getNomeProduto());
+        });
+
+        System.out.println(pedidoDAO.relatorioDeVendasV2().toString());
         em.getTransaction().commit();
 
         closeEntityManger();
