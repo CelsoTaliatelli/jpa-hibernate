@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="feat: consultas com Criteria API">
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/DadosPessoais.java" afterDir="false" />
+    <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="refactory:simplificando entidades com  @Embedded">
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Informatica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Livro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673996394758</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="refactory:simplificando entidades com  @Embedded">
+      <created>1673997370216</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1673997370216</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +259,7 @@
     <MESSAGE value="refactory: Entendendo LAZY e EAGER" />
     <MESSAGE value="feat: consultas com JOIN Fetch" />
     <MESSAGE value="feat: consultas com Criteria API" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: consultas com Criteria API" />
+    <MESSAGE value="refactory:simplificando entidades com  @Embedded" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactory:simplificando entidades com  @Embedded" />
   </component>
 </project>
