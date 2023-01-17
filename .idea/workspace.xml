@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="feat: consultas com Criteria API">
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ProdutoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/DadosPessoais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +83,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CadastroDePedido" />
+        <item itemvalue="Application.CadastroProduto" />
         <item itemvalue="Application.CadastroDePedido" />
         <item itemvalue="Application.CadastroProduto" />
         <item itemvalue="Application.CadastroProduto" />
