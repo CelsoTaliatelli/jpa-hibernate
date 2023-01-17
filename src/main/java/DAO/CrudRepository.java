@@ -5,7 +5,7 @@ import javax.persistence.EntityManager;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
-public class Repository<T> {
+public class CrudRepository<T,K> {
 
     protected EntityManager em;
     final ParameterizedType type = (ParameterizedType) getClass().getGenericSuperclass();
@@ -14,7 +14,7 @@ public class Repository<T> {
      *
      * @param em EntityManager
      * */
-    public Repository(EntityManager em) {
+    public CrudRepository(EntityManager em) {
         this.em = em;
     }
 
@@ -22,7 +22,7 @@ public class Repository<T> {
         em.persist(entidade);
     }
 
-    public T buscarPorId(Long id) {
+    public T buscarPorId(K id) {
         return (T) em.find(entidade,id);
     }
 

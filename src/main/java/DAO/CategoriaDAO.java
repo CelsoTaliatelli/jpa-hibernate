@@ -1,11 +1,11 @@
 package DAO;
 
 import modelo.Categoria;
-import modelo.Produto;
+import modelo.CategoriaID;
 
 import javax.persistence.EntityManager;
 
-public class CategoriaDAO extends Repository<Categoria>{
+public class CategoriaDAO extends CrudRepository<Categoria, CategoriaID> {
     private EntityManager em;
 
     public CategoriaDAO(EntityManager em) {

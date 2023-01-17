@@ -1,6 +1,5 @@
 package DAO;
 
-import modelo.Pedido;
 import modelo.Produto;
 
 import javax.persistence.EntityManager;
@@ -11,7 +10,7 @@ import javax.persistence.criteria.Root;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class ProdutoDAO extends Repository<Produto>{
+public class ProdutoDAO extends CrudRepository<Produto, Long> {
     private EntityManager em;
 
     public ProdutoDAO(EntityManager em) {

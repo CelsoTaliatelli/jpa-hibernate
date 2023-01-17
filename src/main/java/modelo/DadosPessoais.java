@@ -1,5 +1,8 @@
 package modelo;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class DadosPessoais {
 
     private String nome;
