@@ -25,7 +25,7 @@ public class CadastroProduto {
     private static EntityManager em = JPAUtil.getEntityManager();
 
     private static void cadastrarProdutos() {
-        Categoria categoria = new Categoria("CELULARES");
+        Categoria categoria = new Categoria("CELULARES","XPTO");
         Produto celular = new Produto("Iphone 11","Celular",new BigDecimal("12000"), categoria);
 
         CategoriaDAO categoriaDAO = new CategoriaDAO(em);

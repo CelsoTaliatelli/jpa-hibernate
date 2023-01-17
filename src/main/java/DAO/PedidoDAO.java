@@ -1,14 +1,13 @@
 package DAO;
 
 import modelo.Pedido;
-import modelo.Produto;
 import modelo.RelatorioDeVendasVO;
 
 import javax.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class PedidoDAO extends Repository<Pedido>{
+public class PedidoDAO extends CrudRepository<Pedido,Long> {
 
 
     public PedidoDAO(EntityManager em) {
