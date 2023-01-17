@@ -43,10 +43,10 @@ public class ProdutoDAO extends Repository<Produto>{
         Root<Produto> from = produtoCriteriaQuery.from(Produto.class);
         Predicate filtros = builder.and();
         if(nome != null && !nome.trim().isEmpty()) {
-            builder.and(filtros,builder.equal(from.get("nome"),nome));
+            filtros = builder.and(filtros,builder.equal(from.get("nome"),nome));
         }
         if(preco != null) {
-            builder.and(filtros,builder.equal(from.get("preco"),preco));
+            filtros = builder.and(filtros,builder.equal(from.get("preco"),preco));
         }
         produtoCriteriaQuery.where(filtros);
 
