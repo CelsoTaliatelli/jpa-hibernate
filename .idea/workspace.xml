@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="refactory: Entendendo LAZY e EAGER">
+    <list default="true" id="51346130-d63e-43ec-8b4a-20e1558f18c3" name="Changes" comment="feat: consultas com JOIN Fetch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PedidoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/PedidoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ProdutoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673908897822</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: consultas com JOIN Fetch">
+      <created>1673909557623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673909557623</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +240,7 @@
     <MESSAGE value="feat: consultas com select new" />
     <MESSAGE value="feat: utilizando namedQuery" />
     <MESSAGE value="refactory: Entendendo LAZY e EAGER" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactory: Entendendo LAZY e EAGER" />
+    <MESSAGE value="feat: consultas com JOIN Fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: consultas com JOIN Fetch" />
   </component>
 </project>
